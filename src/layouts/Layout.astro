@@ -19,74 +19,107 @@ const { title } = Astro.props;
 	<body>
 		<header>
 			<div class="top-header container">
-				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png" alt="logo mercadolibre">
+				<img
+					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
+					alt="logo mercadolibre"
+				/>
 				<div class="buscador">
-					<input type="text" placeholder="Encuentra lo que quieras acá">
+					<input
+						type="text"
+						placeholder="Encuentra lo que quieras acá"
+					/>
 					<button type="submit">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-							<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-						  </svg>
-						  
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+							></path>
+						</svg>
 					</button>
 				</div>
-				
+
 				<p>publicidad</p>
 			</div>
-		
 		</header>
 
-		<div class="banner">
-
-		</div>
+		<div class="to-60% from-[#FFF12B] to-[rgb(219, 219, 219)] h-72 bg-gradient-to-b " ></div>
 
 		<div class="cards container">
+			<div class="card">1</div>
 
-			<div class="card">
-				1
-			</div>
+			<div class="card">2</div>
 
-			<div class="card">
-				2
-			</div>
+			<div class="card">3</div>
 
-			<div class="card">
-				3
-			</div>
+			<div class="card">4</div>
 
-			<div class="card">
-				4
-			</div>
+			<div class="card">5</div>
 
-			<div class="card">
-				5
-			</div>
+			<div class="card">6</div>
+		</div>
+		<div
+			class="group transition-colors hover:bg-blue-600 hover:cursor-pointer rounded inline-flex items-center px-4 py-2 text-white bg-blue-500"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mr-1 mt-1 group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
 
-			<div class="card">
-				6
-			</div>
-
+			presioname
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-[4px] ml-1 "
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+			</svg>
 		</div>
 		<!-- <slot /> -->
 	</body>
 </html>
 <style>
-	html, body{
+	html,
+	body {
 		margin: 0;
 		padding: 0;
-		background-color: rgb(219, 219, 219) ;
+		background-color: rgb(219, 219, 219);
 	}
 
-	header{
+	header {
 		height: 80px;
-		background-color: rgb(255, 241, 43);
+		background-color: #FFF12B;
 		padding-top: 12px;
 	}
 
-	header img{
+	header img {
 		width: 120px;
 	}
 
-	header input{
+	header input {
 		box-sizing: border-box;
 		display: inline-block;
 		width: 80%;
@@ -97,33 +130,36 @@ const { title } = Astro.props;
 		outline: none;
 	}
 
-	header button{
+	header button {
 		display: inline-block;
 		width: 32px;
 		height: 32px;
 		border: none;
 		background-color: #ffffff;
-
 	}
 
-	.buscador{
+	.buscador {
 		display: flex;
 		align-items: center;
 		padding: 10px 8px;
 	}
-
-	.banner{
+/*
+	.banner {
 		height: 280px;
 		background-color: red;
-		background: linear-gradient(to bottom, rgb(255, 241, 43) 70%, rgb(219, 219, 219) ) ;
+		background: linear-gradient(
+			to bottom,
+			rgb(255, 241, 43) 70%,
+			rgb(219, 219, 219)
+		);
 	}
-
-	.container{
+*/
+	.container {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
 
-	.cards{
+	.cards {
 		display: flex;
 		justify-content: center;
 		gap: 20px;
@@ -131,14 +167,13 @@ const { title } = Astro.props;
 		height: 180px;
 	}
 
-	.card{
+	.card {
 		flex-grow: 1;
 		background-color: #ffffff;
 		border-radius: 6px;
 	}
 
-	.top-header{
+	.top-header {
 		column-count: 3;
 	}
-
 </style>
